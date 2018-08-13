@@ -1,0 +1,22 @@
+[
+{
+	"id": "Lang2018c",
+	"authors": ["M Lang", "M Shkolnikov"],
+	"year": "2018",
+	"title": "Harmonic dynamics of the Abelian sandpile",
+	"type": "regular",
+	"source": "arXiv preprint",
+	"location": "arXiv:1806.10823",
+	"url": "https://arxiv.org/abs/1806.10823"
+},
+{
+	"id": "Lang2018a",
+	"authors": ["M Ple&scaron;ka", "M Lang", "D Refardt", "BR Levin", "CC Guet"],
+	"year": "2018",
+	"title": "Phage–host population dynamics promotes prophage acquisition in bacteria with innate immunity",
+	"type": "regular",
+	"source": "Nature ecology &amp; evolution",
+	"location": "2(2), 359",
+	"url": "https://www.nature.com/articles/s41559-017-0424-z"
+}
+]
