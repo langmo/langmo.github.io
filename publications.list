@@ -21,7 +21,7 @@
 },
 {
 	"id": "Lang2018a",
-	"authors": ["M Pleška", "M Lang", "D Refardt", "BR Levin", "CC Guet"],
+	"authors": ["M Ple%u0161ka", "M Lang", "D Refardt", "BR Levin", "CC Guet"],
 	"year": "2018",
 	"title": "Phage-host population dynamics promotes prophage acquisition in bacteria with innate immunity",
 	"type": "regular",
@@ -71,7 +71,7 @@
 },
 {
 	"id": "Lang2016a",
-	"authors": ["R Gnügge", "L Dharmarajan", "M Lang", "J Stelling"],
+	"authors": ["R Gn%FCgge", "L Dharmarajan", "M Lang", "J Stelling"],
 	"year": "2016",
 	"title": "An Orthogonal Permease–Inducer–Repressor Feedback Loop Shows Bistability",
 	"type": "regular",
@@ -95,7 +95,7 @@
 	"year": "2014",
 	"title": "Modular Identification and Analysis of Biomolecular Networks",
 	"type": "phdthesis",
-	"source": "Diss., Eidgenössische Technische Hochschule ETH Zürich",
+	"source": "Diss., Eidgen%F6ssische Technische Hochschule ETH Z%FCrich",
 	"location": "number 22344",
 	"url": "https://doi.org/10.3929/ethz-a-010388689"
 },

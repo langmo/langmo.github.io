@@ -75,25 +75,25 @@ function createPublication(publication, publicationElement)
 	var names = "";
 	if(publication.authors.length == 1)
 	{
-		names = publication.authors[0];
+		names = unescape(publication.authors[0]);
 	}
 	else
 	{
 		for(var i=0; i<publication.authors.length; i++)
 		{
 				if(i<publication.authors.length-1)
-					names += publication.authors[i] + ", ";
+					names += unescape(publication.authors[i]) + ", ";
 				else
-					names += "and " + publication.authors[i]+" ";
+					names += "and " + unescape(publication.authors[i])+" ";
 		}
 	}
 	var namesElement = document.createTextNode(names);
 	publicationElement.appendChild(namesElement);
 	publicationElement.appendChild(document.createTextNode("("+publication.year+"). "));
-	publicationElement.appendChild(document.createTextNode("\""+publication.title+".\" "));
+	publicationElement.appendChild(document.createTextNode("\""+unescape(publication.title)+".\" "));
 	var sourceElement = document.createElement("i");
-	sourceElement.appendChild(document.createTextNode(publication.source));
+	sourceElement.appendChild(document.createTextNode(unescape(publication.source)));
 	publicationElement.appendChild(sourceElement);
-	publicationElement.appendChild(document.createTextNode(", "+publication.location+"."));
+	publicationElement.appendChild(document.createTextNode(", "+unescape(publication.location)+"."));
 	publicationElement.appendChild(document.createElement("br"));
 }
