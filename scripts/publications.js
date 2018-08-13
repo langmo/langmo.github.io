@@ -1,4 +1,4 @@
-var requestURL = "{{ site.github.url }}/publications.list";
+var requestURL = "https://langmo.github.io/publications.list";
 var publications = null;
 function queryPublications(callback)
 {
