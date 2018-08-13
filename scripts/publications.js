@@ -32,6 +32,7 @@ function showPublicationPopupInternal(element, publications, publicationID)
 	elem.id = publicationPopupID;
 	elem.class = "popuptext";
 	elem.appendChild(document.createTextNode(publicationID));
+	element.appendChild(elem);
 }
 function removePublicationPopup()
 {
