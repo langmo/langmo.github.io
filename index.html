@@ -3,19 +3,24 @@ layout : layout
 title : Personal Website
 pagetitle : Personal Website
 ---
-<div class="figure">
-	<iframe width="252" height="271" src="https://www.youtube-nocookie.com/embed/4EETd94ud1o?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	<p>
-		<small>Video demonstrating the successive action of four harmonic fields on the Abelian sandpile identity.<br />
-		<a href="{{ site.github.url }}/videos.html">More videos</a></small> 
-	</p>
+<div class="box">
+	 <div class="boxHeader">
+		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('sandpiles');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="sandpiles-plusMinus" /></a></div>
+		   Abelian Sandpiles
+	  </div>
+	  <div class="boxMain" id="sandpiles" style="display:block">
+		<div class="figure">
+			<iframe width="252" height="271" src="https://www.youtube-nocookie.com/embed/4EETd94ud1o?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<p>
+				<small>Harmonic dynamics of the Abelian sandpile identity.<br />
+				<a href="https://langmo.github.io/interpile//videos.html" target="_blank">More videos</a></small> 
+			</p>
+		</div>
+		<p>
+			Recently, I got interested in the Abelian sandpile, and especially in its harmonic dynamics induced by harmonic fields of different orders. In a publication currently available as a <a href="https://arxiv.org/abs/1806.10823" target="_blank">pre-print</a>, we not only showed that these dynamics exists and demonstrated how to induce them, we also proved that the set of all harmonic fields provide universal coordinates for the sandpile group, allowing to map sandpile configurations between different domains.
+		</p>
+		<p>
+			To learn more about my research on the Abelian sandpile, read my <a href="{{ site.github.url }}/background.html">preprint</a> on this topic or visit the <a href="https://langmo.github.io/interpile/" target="_blank">project website</a>.
+		</p>
+	  </div>
 </div>
-<h2>Abelian sandpiles and their harmonic dynamics</h2>
-<p>
-The identity of the Abelian sandpile group shows smooth 1-periodic dynamics induced by harmonic fields. This website summarizes results on the properties of these dynamics, and also provides an open-source software solution called <i>InterPile</i> to interactively explore and manipulate sandpiles on various domains, as well as to generate movies showing the dynamics of the sandpile identity or any other recurrent configuration induced by arbitrary harmonic functions and for arbitrarily defined domains.
-</p>
-<h2>Videos and Software</h2>
-<p>To access the videos showing the sandpile identity dynamics, visit our <a href="{{ site.github.url }}/videos.html">Videos</a> section. To create own videos showing the sandpile identity dynamics, download <a href="{{ site.github.url }}/download.html">InterPile</a>.</p>
-<h2>Learn more</h2>
-<p>To learn more about the Abelian sandpile identity dynamics, read our <a href="{{ site.github.url }}/background.html">preprint</a> on this topic.</p>
-<br style="clear:left;" />
