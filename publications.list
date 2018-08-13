@@ -73,7 +73,7 @@
 	"id": "Lang2016a",
 	"authors": ["R Gn%FCgge", "L Dharmarajan", "M Lang", "J Stelling"],
 	"year": "2016",
-	"title": "An Orthogonal Permease–Inducer–Repressor Feedback Loop Shows Bistability",
+	"title": "An Orthogonal Permease-Inducer-Repressor Feedback Loop Shows Bistability",
 	"type": "regular",
 	"source": "ACS synthetic biology",
 	"location": "5(10), 1098-1107",
@@ -152,7 +152,7 @@
 },
 {
 	"id": "Lang2009a",
-	"authors": ["M Lang", "S Waldherr", "F Allgöwer"],
+	"authors": ["M Lang", "S Waldherr", "F Allg%F6wer"],
 	"year": "2009",
 	"title": "Amplitude distribution of stochastic oscillations in biochemical networks due to intrinsic noise",
 	"type": "regular",
