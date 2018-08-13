@@ -275,7 +275,7 @@ img.faq
     -ms-user-select: none;
     user-select: none;
 }
-.popupLink.popuptext 
+.popupLink .popuptext 
 {
     visibility: visible;
     width: 160px;
@@ -293,7 +293,7 @@ img.faq
     animation: fadeIn 1s;
 }
 /* Popup arrow */
-.popupLink.popuptext::after {
+.popupLink .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
