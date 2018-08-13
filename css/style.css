@@ -246,7 +246,6 @@ div#footer
 	font-size: 40px;
 	margin: 20px 0 5px 0;
 	padding: 0 5px 0 0;
-	background-color: #FFFFFF;
 	border-top: 1px dashed #AAAAAA;
 }
 div#footer p
@@ -298,6 +297,24 @@ img.faq
 		background-attachment: fixed;
 		background-position: right center; 
 	}
+	div#footer
+	{
+		margin: 20px 304px 5px 0;
+	}
+	div#header
+	{
+		margin: 0px 304px 0px 0px;
+		border-bottom: 1px solid #777777;
+		height:52px;
+	}
+	div#headerLogo
+	{
+		height:52px;
+		margin: 0px;
+		padding: 0px 0 0 0;
+		text-align:left;
+		vertical-align:bottom;
+	}
 	div#leftColumn
 	{
 		width: 15%;
@@ -334,19 +351,6 @@ img.faq
 		background-color:#F8F8F8;
 		border-top:1px solid #AAAAAA;
 		border-bottom:1px solid #AAAAAA;
-	}
-	div#header
-	{
-		border-bottom: 1px solid #777777;
-		height:52px;
-	}
-	div#headerLogo
-	{
-		height:52px;
-		margin: 0px;
-		padding: 0px 0 0 0;
-		text-align:left;
-		vertical-align:bottom;
 	}
 	div.plusMinusSign
 	{
