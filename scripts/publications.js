@@ -23,6 +23,28 @@ function queryPublications(callback)
 	xhr.send(null);
 	return;
 }
+
+var publicationPopupID = "publicationPopup";
+function showPublicationPopupInternal(element, publications, publicationID)
+{
+	removePublicationPopup();
+	var elem = document.createElement("span");
+	elem.id = publicationPopupID;
+	elem.class = "popuptext";
+	elem.appendChild(document.createTextNode(publicationID));
+}
+function removePublicationPopup()
+{
+	var elem = document.getElementById(publicationPopupID);
+	if(elem)
+	{
+		elem.parentNode.removeChild(elem);
+	}
+}
+function showPublicationPopup(element, publicationID)
+{
+	queryPublications(function callback(publications){showPublicationPopupInternal(element, publications, publicationID);});
+}
 var pubTypes = [
 	{
 		"id": "regular",
@@ -100,7 +122,7 @@ function createPublication(publication, publicationElement)
 	publicationElement.appendChild(mainElement);
 	
 	var bottomElement = document.createElement("p");
-	bottomElement.textAlign = "right";
+	bottomElement.style.textAlign = "right";
 	if(publication.url)
 	{
 		var viewElement = document.createElement("a");
