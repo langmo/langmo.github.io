@@ -48,7 +48,7 @@ function createPublications(publications, parentElementID)
 	{
 		parentElement.removeChild(parentElement.firstChild);
 	}
-	for(var i=0; i<pubTypes.length, i++)
+	for(var i=0; i<pubTypes.length; i++)
 	{
 		createPublicationsType(publications, pubTypes[i], parentElement)
 	}
