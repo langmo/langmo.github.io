@@ -1,8 +1,30 @@
 ---
 layout : layout
-title : Personal Website
-pagetitle : Personal Website
+title : Personal Website of Moritz Lang
+pagetitle : Personal Website of Moritz Lang
 ---
+
+<div class="box">
+  <div class="boxHeader">
+	   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('frameworks');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="prediction-plusMinus" /></a></div>
+	   Predictive cellular adaptation
+  </div>
+  <div class="boxMain" id="prediction" style="display:block">
+	<div class="figure">
+		<a href="{{ site.github.url }}/img/modelTypes.jpg" target="_blank"><img src="{{ site.github.url }}/img/nodal_comic.jpg" width="252" /></a>
+		<p><small>
+			The decision between mesoderm and endoderm cell fate in zebrafish gastrulation is based on the interconnection of a kinetic proofreading mechanism measuring cell-cell contact durations, and a positive feedback loop.
+		</small></p>
+	</div>
+	<p>
+		Single cellular organisms as well as individual cells of a multicellular organism constantly observe the current state of their environment to dynamically adapt their behavior and fate decisions. 
+		However, the necessary information for the corresponding molecular adaptation mechanisms is not always readily available for measurement. 
+		Furthermore, the adaptation mechanism itself might operate on a similar or even a slower timescale than the one determining the change of environmental conditions, such that the environment might already have completely changed before adaptation can be accomplished.
+		In such cases, cells can utilize regularities in environmental dynamics to estimate the future environmental conditions based on their past dynamics, and then directly adapt to those estimated future conditions.
+	</p>
+	<br clear="all" />
+  </div>
+</div>
 
 <div class="box">
   <div class="boxHeader">
@@ -11,7 +33,7 @@ pagetitle : Personal Website
   </div>
   <div class="boxMain" id="frameworks" style="display:block">
 	<div class="figure">
-		<a href={{ site.github.url }}/img/modelTypes.jpg" target="_blank"><img src="{{ site.github.url }}/img/modelTypes.jpg" width="252" /></a>
+		<a href="{{ site.github.url }}/img/modelTypes.jpg" target="_blank"><img src="{{ site.github.url }}/img/modelTypes.jpg" width="252" /></a>
 		<p><small>
 			Different modeling frameworks and their relationships: A) ODEs; B-D) block-oriented nonlinear systems; E) species-reaction graph; and F) species-graph.
 		</small></p>
