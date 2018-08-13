@@ -95,5 +95,5 @@ function createPublication(publication, publicationElement)
 	sourceElement.appendChild(document.createTextNode(publication.source));
 	publicationElement.appendChild(sourceElement);
 	publicationElement.appendChild(document.createTextNode(", "+publication.location));
-	publicationElement.appendChild(document.createNode("br"));
+	publicationElement.appendChild(document.createElement("br"));
 }
