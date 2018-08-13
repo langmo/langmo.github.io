@@ -37,7 +37,7 @@ var pubTypes = [
 		"name": "Book Chapters"
 	},
 	{
-		"id": "thesis",
+		"id": "phdthesis",
 		"name": "PHD Thesis"
 	}
 ];
@@ -90,10 +90,10 @@ function createPublication(publication, publicationElement)
 	var namesElement = document.createTextNode(names);
 	publicationElement.appendChild(namesElement);
 	publicationElement.appendChild(document.createTextNode("("+publication.year+"). "));
-	publicationElement.appendChild(document.createTextNode("\""+publication.title+"\"."));
+	publicationElement.appendChild(document.createTextNode("\""+publication.title+".\" "));
 	var sourceElement = document.createElement("i");
 	sourceElement.appendChild(document.createTextNode(publication.source));
 	publicationElement.appendChild(sourceElement);
-	publicationElement.appendChild(document.createTextNode(", "+publication.location));
+	publicationElement.appendChild(document.createTextNode(", "+publication.location+"."));
 	publicationElement.appendChild(document.createElement("br"));
 }

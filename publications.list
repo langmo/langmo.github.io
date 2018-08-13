@@ -10,13 +10,154 @@
 	"url": "https://arxiv.org/abs/1806.10823"
 },
 {
-	"id": "Lang2018a",
-	"authors": ["M Ple&scaron;ka", "M Lang", "D Refardt", "BR Levin", "CC Guet"],
+	"id": "Lang2018b",
+	"authors": ["PM Misun", "AK Birchler", "M Lang", "A Hierlemann", "O Frey"],
 	"year": "2018",
-	"title": "Phageâ€“host population dynamics promotes prophage acquisition in bacteria with innate immunity",
+	"title": "Fabrication and Operation of Microfluidic Hanging-Drop Networks",
+	"type": "bookchapter",
+	"source": "In Cell-Based Microarrays",
+	"location": "pp. 183-202. Humana Press, New York, NY",
+	"url": "https://link.springer.com/protocol/10.1007/978-1-4939-7792-5_15"
+},
+{
+	"id": "Lang2018a",
+	"authors": ["M Pleška", "M Lang", "D Refardt", "BR Levin", "CC Guet"],
+	"year": "2018",
+	"title": "Phage-host population dynamics promotes prophage acquisition in bacteria with innate immunity",
 	"type": "regular",
-	"source": "Nature ecology &amp; evolution",
+	"source": "Nature ecology & evolution",
 	"location": "2(2), 359",
 	"url": "https://www.nature.com/articles/s41559-017-0424-z"
+},
+{
+	"id": "Barone2017",
+	"authors": ["V Barone", "M Lang", "SFG Krens", "SJ Pradhan", "S Shamipour", "K Sako", "M Sikora", "CC Guet", "C-P Heisenberg"],
+	"year": "2017",
+	"title": "An Effective Feedback Loop between Cell-Cell Contact Duration and Morphogen Signaling Determines Cell Fate",
+	"type": "regular",
+	"source": "Developmental cell",
+	"location": "43(2), 198-211",
+	"url": "https://www.sciencedirect.com/science/article/pii/S1534580717307669"
+},
+{
+	"id": "Lang2017a",
+	"authors": ["M Lang", "ED Sontag"],
+	"year": "2017",
+	"title": "Zeros of nonlinear systems with input invariances",
+	"type": "regular",
+	"source": "Automatica",
+	"location": "81, 46-55",
+	"url": "https://www.sciencedirect.com/science/article/pii/S0005109817301607"
+},
+{
+	"id": "Lang2016c",
+	"authors": ["M Lang", "J Stelling"],
+	"year": "2016",
+	"title": "Modular parameter identification of biomolecular networks",
+	"type": "regular",
+	"source": "SIAM Journal on Scientific Computing",
+	"location": "38(6), B988-B1008",
+	"url": "https://epubs.siam.org/doi/abs/10.1137/15M103306X"
+},
+{
+	"id": "Lang2016b",
+	"authors": ["M Lang", "E Sontag"],
+	"year": "2016",
+	"title": "Scale-invariant systems realize nonlinear differential operators",
+	"type": "conference",
+	"source": "American Control Conference (ACC)",
+	"location": "6-8 July  2016, Boston, MA, pp. 6676-6682",
+	"url": "https://ieeexplore.ieee.org/abstract/document/7526722/"
+},
+{
+	"id": "Lang2016a",
+	"authors": ["R Gnügge", "L Dharmarajan", "M Lang", "J Stelling"],
+	"year": "2016",
+	"title": "An Orthogonal Permease–Inducer–Repressor Feedback Loop Shows Bistability",
+	"type": "regular",
+	"source": "ACS synthetic biology",
+	"location": "5(10), 1098-1107",
+	"url": "https://pubs.acs.org/doi/abs/10.1021/acssynbio.6b00013"
+},
+{
+	"id": "Lang2015a",
+	"authors": ["TP Prescott", "M Lang", "A Papachristodoulou"],
+	"year": "2015",
+	"title": "Quantification of interactions between dynamic cellular network functionalities by cascaded layering",
+	"type": "regular",
+	"source": "PLoS computational biology",
+	"location": "11(5), e1004235",
+	"url": "http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004235"
+},
+{
+	"id": "Lang2014c",
+	"authors": ["M Lang"],
+	"year": "2014",
+	"title": "Modular Identification and Analysis of Biomolecular Networks",
+	"type": "phdthesis",
+	"source": "Diss., Eidgenössische Technische Hochschule ETH Zürich",
+	"location": "number 22344",
+	"url": "https://doi.org/10.3929/ethz-a-010388689"
+},
+
+{
+	"id": "Lang2014b",
+	"authors": ["M Lang", "J Stelling"],
+	"year": "2014",
+	"title": "Structural Identification of Nonlinear Dynamic Biomolecular Feedback and Feedforward Loops",
+	"type": "conference",
+	"source": "Proceedings of the 19th IFAC World Congress",
+	"location": "24-28 August 2014, Cape Town, South Africa, pp. 796-802",
+	"url": "https://www.sciencedirect.com/science/article/pii/S147466701641712X"
+},
+{
+	"id": "Lang2014a",
+	"authors": ["M Lang", "S Summers", "J Stelling"],
+	"year": "2014",
+	"title": "Cutting the wires: modularization of cellular networks for experimental design",
+	"type": "regular",
+	"source": "Biophysical journal",
+	"location": "106(1), 321-331",
+	"url": "https://www.sciencedirect.com/science/article/pii/S0006349513042197"
+},
+{
+	"id": "Lang2012b",
+	"authors": ["W Bacchus", "M Lang", "MD El-Baba", "W Weber", "J Stelling", "M Fussenegger"],
+	"year": "2012",
+	"title": "Synthetic two-way communication between mammalian cells",
+	"type": "regular",
+	"source": "Nature biotechnology",
+	"location": "30(10), 991",
+	"url": "https://www.nature.com/articles/nbt.2351"
+},
+{
+	"id": "Lang2012a",
+	"authors": ["M Lang", "F Rudolf", "J Stelling"],
+	"year": "2012",
+	"title": "Use of YouScope to implement systematic microscopy protocols",
+	"type": "regular",
+	"source": "Current protocols in molecular biology",
+	"location": "98(1), 14.21.1-14.21.23",
+	"url": "https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471142727.mb1421s98"
+},
+{
+	"id": "Lang2011a",
+	"authors": ["M Lang", "TT Marquez-Lago", "J Stelling", "S Waldherr"],
+	"year": "2011",
+	"title": "Autonomous synchronization of chemically coupled synthetic oscillators",
+	"type": "regular",
+	"source": "Bulletin of mathematical biology",
+	"location": "73(11), 2678-2706",
+	"url": "https://link.springer.com/article/10.1007/s11538-011-9642-8"
+},
+{
+	"id": "Lang2009a",
+	"authors": ["M Lang", "S Waldherr", "F Allgöwer"],
+	"year": "2009",
+	"title": "Amplitude distribution of stochastic oscillations in biochemical networks due to intrinsic noise",
+	"type": "regular",
+	"source": "PMC biophysics",
+	"location": "2(10), 1-28",
+	"url": "https://pmcbiophys.biomedcentral.com/articles/10.1186/1757-5036-2-10"
 }
 ]
