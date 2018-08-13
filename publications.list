@@ -47,7 +47,8 @@
 	"type": "regular",
 	"source": "Automatica",
 	"location": "81, 46-55",
-	"url": "https://www.sciencedirect.com/science/article/pii/S0005109817301607"
+	"url": "https://www.sciencedirect.com/science/article/pii/S0005109817301607",
+	"download": "https://langmo.github.io/pub/zeros_of_nonlinear_systems.pdf"
 },
 {
 	"id": "Lang2016c",

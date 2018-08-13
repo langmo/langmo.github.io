@@ -72,10 +72,11 @@ function createPublicationsType(publications, pubType, parentElement)
 }
 function createPublication(publication, publicationElement)
 {
+	var mainElement = document.createElement("p");
 	var names = "";
 	if(publication.authors.length == 1)
 	{
-		names = unescape(publication.authors[0]);
+		names = unescape(publication.authors[0])+" ";
 	}
 	else
 	{
@@ -88,12 +89,35 @@ function createPublication(publication, publicationElement)
 		}
 	}
 	var namesElement = document.createTextNode(names);
-	publicationElement.appendChild(namesElement);
-	publicationElement.appendChild(document.createTextNode("("+publication.year+"). "));
-	publicationElement.appendChild(document.createTextNode("\""+unescape(publication.title)+".\" "));
+	mainElement.appendChild(namesElement);
+	mainElement.appendChild(document.createTextNode("("+publication.year+"). "));
+	mainElement.appendChild(document.createTextNode("\""+unescape(publication.title)+".\" "));
 	var sourceElement = document.createElement("i");
 	sourceElement.appendChild(document.createTextNode(unescape(publication.source)));
-	publicationElement.appendChild(sourceElement);
-	publicationElement.appendChild(document.createTextNode(", "+unescape(publication.location)+"."));
-	publicationElement.appendChild(document.createElement("br"));
+	mainElement.appendChild(sourceElement);
+	mainElement.appendChild(document.createTextNode(", "+unescape(publication.location)+"."));
+	mainElement.appendChild(document.createElement("br"));
+	publicationElement.appendChild(mainElement);
+	
+	var bottomElement = document.createElement("p");
+	bottomElement.textAlign = "right";
+	if(publication.url)
+	{
+		var viewElement = document.createElement("a");
+		viewElement.href=publication.url;
+		viewElement.target="_blank";
+		viewElement.appendChild(document.createTextNode("link"));
+		bottomElement.appendChild(viewElement);
+	}
+	if(publication.download)
+	{
+		if(bottomElement.hasChildNodes())
+			bottomElement.appendChild(document.createTextNode(" | "));
+		var viewElement = document.createElement("a");
+		viewElement.href=publication.download;
+		viewElement.target="_blank";
+		viewElement.appendChild(document.createTextNode("download"));
+		bottomElement.appendChild(viewElement);
+	}
+	publicationElement.appendChild(bottomElement);
 }
