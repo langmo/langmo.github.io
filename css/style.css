@@ -382,7 +382,6 @@ img.faq
 		font-size: 10pt;
 		margin: 5px 5px 5px 5px;
 		padding: 0;
-		border:1px solid #BBBBBB;
 		background: rgba(255,255,255, 0.5);
 	}
 	div.boxHeader
@@ -394,6 +393,10 @@ img.faq
 		font-size: 10pt;
 		font-weight:bold;
 		border-bottom:1px dashed #BBBBBB;
+        border-top:1px solid #BBBBBB;
+        border-left:1px solid #BBBBBB;
+        border-right:1px solid #BBBBBB;
+        border-radius: 10px 10px 0px 0px;
 	}
 	div.boxMain
 	{
@@ -401,6 +404,10 @@ img.faq
 		font-size: 10pt;
 		margin: 0;
 		padding: 5px 5px 5px 5px;
+		border-bottom:1px solid #BBBBBB;
+        border-left:1px solid #BBBBBB;
+        border-right:1px solid #BBBBBB;
+        border-radius: 0px 0px 10px 10px;
 	}
 	div.boxMain hr
 	{
