@@ -46,7 +46,7 @@ function showPublicationPopupInternal(element, publications, publicationID)
 	var elem = document.createElement("span");
 	elem.id = publicationPopupID;
 	elem.classList.add('popuptext');
-	createPublication(publication, elem, false);
+	createPublication(publication, elem, false, false);
 	element.appendChild(elem);
 }
 function removePublicationPopup()
@@ -114,13 +114,13 @@ function createPublicationsType(publications, pubType, parentElement)
 		if(publications[i].type == pubType.id)
 		{
 			publicationElement = document.createElement("li");
-			createPublication(publications[i], publicationElement, true);	
+			createPublication(publications[i], publicationElement, true, true);	
 			listElement.appendChild(publicationElement);	
 		}
 	}		
 	parentElement.appendChild(listElement);		
 }
-function createPublication(publication, publicationElement, showLinks)
+function createPublication(publication, publicationElement, showLinks, lineBreaks)
 {
 	var mainElement = document.createElement("p");
 	var names = "";
@@ -141,7 +141,11 @@ function createPublication(publication, publicationElement, showLinks)
 	var namesElement = document.createTextNode(names);
 	mainElement.appendChild(namesElement);
 	mainElement.appendChild(document.createTextNode("("+publication.year+"). "));
+	if(lineBreaks)
+		mainElement.appendChild(document.createElement("br"));
 	mainElement.appendChild(document.createTextNode("\""+unescape(publication.title)+".\" "));
+	if(lineBreaks)
+		mainElement.appendChild(document.createElement("br"));
 	var sourceElement = document.createElement("i");
 	sourceElement.appendChild(document.createTextNode(unescape(publication.source)));
 	mainElement.appendChild(sourceElement);
@@ -152,7 +156,6 @@ function createPublication(publication, publicationElement, showLinks)
 	if(showLinks)
 	{
 		var bottomElement = document.createElement("p");
-		//bottomElement.style.textAlign = "right";
 		if(publication.url)
 		{
 			var viewElement = document.createElement("a");
