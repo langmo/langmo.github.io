@@ -284,6 +284,8 @@ img.faq
     background-color: #555;
     color: #fff;
     text-align: left;
+	text-decoration:none;  
+	font-weight: normal;
     border-radius: 6px;
     padding: 6px;
     position: absolute;
