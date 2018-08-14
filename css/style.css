@@ -267,28 +267,30 @@ img.faq
 
 .popupLink 
 {
-    position: relative;
+    /*position: relative;
     display: inline-block;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none;*/
+	display:inline;
+	cursor: pointer;
 }
 .popupLink .popuptext 
 {
     visibility: visible;
-    width: 160px;
+    width: 230px;
     background-color: #555;
     color: #fff;
-    text-align: center;
+    text-align: left;
     border-radius: 6px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -115px;
 	-webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
