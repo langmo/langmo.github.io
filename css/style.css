@@ -338,7 +338,7 @@ img.faq
 	}
 	div#footer
 	{
-		margin: 20px 304px 5px 0;
+		margin: 20px 200px 5px 0;
 	}
 	div#leftColumn
 	{
@@ -376,7 +376,7 @@ img.faq
 		width:13px;
 		height:13px;
 		display:block;
-		margin-right:8px;
+		margin-right:5px;
 	}
 	div.box
 	{
@@ -405,7 +405,7 @@ img.faq
 		font-size: 10pt;
 		margin: 0;
 		background: rgba(255,255,255, 0.5);
-		padding: 5px 5px 5px 5px;
+		padding: 5px 5px 0px 5px;
 		border-bottom:1px solid #BBBBBB;
         border-left:1px solid #BBBBBB;
         border-right:1px solid #BBBBBB;
@@ -420,7 +420,7 @@ img.faq
 		width: 255px;
 	}
 }
-@media only screen and (min-width: 1200px) 
+@media only screen and (min-width: 1300px) 
 {
 	div.box
 	{
@@ -428,12 +428,11 @@ img.faq
 	}
 
 }
-@media only screen and (min-width: 1600px) 
+@media only screen and (min-width: 1750px) 
 {
 	div.box
 	{
 		width: calc(32% - 10px);
-		background: rgba(255,0,0, 0.5);
 	}
 
 }
