@@ -24,19 +24,23 @@ function queryPublications(callback)
 	return;
 }
 
-var publicationPopupID = "publicationPopup";
-function showPublicationPopupInternal(element, publications, publicationID)
+function findPublication(publications, publicationID)
 {
-	removePublicationPopup();
-	var publication = null;
 	for(var i=0; i<publications.length; i++)
 	{
 		if(publications[i].id == publicationID)
 		{
-			publication = publications[i];
-			break;
+			return publications[i];
 		}
 	}
+	return null;
+}
+
+var publicationPopupID = "publicationPopup";
+function showPublicationPopupInternal(element, publications, publicationID)
+{
+	removePublicationPopup();
+	var publication = findPublication(publications, publicationID);
 	if(publication == null)
 		return;
 	var elem = document.createElement("span");
@@ -56,6 +60,18 @@ function removePublicationPopup()
 function showPublicationPopup(element, publicationID)
 {
 	queryPublications(function callback(publications){showPublicationPopupInternal(element, publications, publicationID);});
+}
+
+function openPublicationInternal(publications, publicationID)
+{
+	var publication = findPublication(publications, publicationID);
+	if(publication == null)
+		return;
+	window.open(publication.url); 
+}
+function openPublication(publicationID)
+{
+	queryPublications(function callback(publications){openPublicationInternal(publications, publicationID);});
 }
 var pubTypes = [
 	{
