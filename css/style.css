@@ -82,7 +82,7 @@ div.box-container
 }
 div.box
 {
-	margin: 5px;
+	margin: 0px;
 	padding: 0;
 	box-sizing: border-box;
 	float: left;
@@ -286,7 +286,7 @@ img.faq
 {
     visibility: visible;
     width: 230px;
-    background-color: rgba(50,50,50,0.8);
+    background-color: rgba(50,50,50,0.9);
     color: #fff;
     text-align: left;
 	text-decoration:none;  
@@ -380,7 +380,7 @@ img.faq
 	div.box
 	{
 		font-size: 10pt;
-		margin: 5px 0px 5px 0px;
+		margin: 5px 5px 5px 5px;
 		padding: 0;
 		border:1px solid #BBBBBB;
 		background: rgba(255,255,255, 0.5);
