@@ -287,7 +287,7 @@ img.faq
 {
     visibility: visible;
     width: 230px;
-    background-color: #555;
+    background-color: rgba(50,50,50,0.8);
     color: #fff;
     text-align: left;
 	text-decoration:none;  
@@ -415,11 +415,15 @@ img.faq
 {
 	div.box
 	{
-		font-size: 10pt;
-		margin: 5px;
-		padding: 0;
-		border:1px solid #BBBBBB;
-		width: 45%;
+		width: 49%;
+	}
+
+}
+@media only screen and (min-width: 1600px) 
+{
+	div.box
+	{
+		width: 32%;
 	}
 
 }
