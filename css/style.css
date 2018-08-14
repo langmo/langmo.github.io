@@ -432,7 +432,8 @@ img.faq
 {
 	div.box
 	{
-		width: calc(33%-10px);
+		width: calc(32% - 10px);
+		background: rgba(255,0,0, 0.5);
 	}
 
 }
