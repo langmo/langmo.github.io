@@ -28,10 +28,21 @@ var publicationPopupID = "publicationPopup";
 function showPublicationPopupInternal(element, publications, publicationID)
 {
 	removePublicationPopup();
+	var publication = null;
+	for(var i=0; i<publications.length; i++)
+	{
+		if(publications[i].id == publicationID)
+		{
+			publication = publications[i];
+			break;
+		}
+	}
+	if(publication == null)
+		return;
 	var elem = document.createElement("span");
 	elem.id = publicationPopupID;
 	elem.classList.add('popuptext');
-	elem.appendChild(document.createTextNode(publicationID));
+	createPublication(publication, elem, false);
 	element.appendChild(elem);
 }
 function removePublicationPopup()
@@ -87,13 +98,13 @@ function createPublicationsType(publications, pubType, parentElement)
 		if(publications[i].type == pubType.id)
 		{
 			publicationElement = document.createElement("li");
-			createPublication(publications[i], publicationElement);	
+			createPublication(publications[i], publicationElement, true);	
 			listElement.appendChild(publicationElement);	
 		}
 	}		
 	parentElement.appendChild(listElement);		
 }
-function createPublication(publication, publicationElement)
+function createPublication(publication, publicationElement, showLinks)
 {
 	var mainElement = document.createElement("p");
 	var names = "";
@@ -122,25 +133,28 @@ function createPublication(publication, publicationElement)
 	mainElement.appendChild(document.createElement("br"));
 	publicationElement.appendChild(mainElement);
 	
-	var bottomElement = document.createElement("p");
-	bottomElement.style.textAlign = "right";
-	if(publication.url)
+	if(showLinks)
 	{
-		var viewElement = document.createElement("a");
-		viewElement.href=publication.url;
-		viewElement.target="_blank";
-		viewElement.appendChild(document.createTextNode("link"));
-		bottomElement.appendChild(viewElement);
+		var bottomElement = document.createElement("p");
+		bottomElement.style.textAlign = "right";
+		if(publication.url)
+		{
+			var viewElement = document.createElement("a");
+			viewElement.href=publication.url;
+			viewElement.target="_blank";
+			viewElement.appendChild(document.createTextNode("link"));
+			bottomElement.appendChild(viewElement);
+		}
+		if(publication.download)
+		{
+			if(bottomElement.hasChildNodes())
+				bottomElement.appendChild(document.createTextNode(" | "));
+			var viewElement = document.createElement("a");
+			viewElement.href=publication.download;
+			viewElement.target="_blank";
+			viewElement.appendChild(document.createTextNode("download"));
+			bottomElement.appendChild(viewElement);
+		}
+		publicationElement.appendChild(bottomElement);
 	}
-	if(publication.download)
-	{
-		if(bottomElement.hasChildNodes())
-			bottomElement.appendChild(document.createTextNode(" | "));
-		var viewElement = document.createElement("a");
-		viewElement.href=publication.download;
-		viewElement.target="_blank";
-		viewElement.appendChild(document.createTextNode("download"));
-		bottomElement.appendChild(viewElement);
-	}
-	publicationElement.appendChild(bottomElement);
 }
