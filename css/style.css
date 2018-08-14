@@ -1,3 +1,12 @@
+body 
+{
+	background-image: none;
+	color: black;
+	background-color: #ffffff;
+	font-family: Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+}
 .central::after 
 {
     content: "";
@@ -37,12 +46,11 @@ div#leftColumn a
 	display: block;
 	text-decoration:none;  
 	font-weight: bold;
-	
-	padding: 6px 3px 6px 13px;
-    margin-bottom: 5px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	border-top:1px solid #E0E0E0;
-	border-bottom:1px solid #E0E0E0;
+	padding: 6px 13px 6px 13px;
+    margin:0px 5px 0px 5px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border:1px solid #E0E0E0;
+	border-radius: 6px;
     background-color: #F8F8F8;
     color: #555555;
 }
@@ -50,28 +58,22 @@ div#leftColumn a:hover
 {
 	color: #555555;
 	background-color:#AAAAAA;
-	border-top:1px solid #A0A0A0;
-	border-bottom:1px solid #A0A0A0;
+	border:1px solid #A0A0A0;
+	text-decoration:none;  
 }
 
-body 
-{
-	background-image: none;
-	color: black;
-	background-color: #ffffff;
-	font-family: Helvetica,Arial,sans-serif;
-	margin: 0;
-	padding: 0;
-}
 div#leftColumn ul
 {
 	list-style-type: none;
-	margin: 0px;
+	margin: 0px 0px 15px 0px;
 	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 div#leftColumn li
 {
-	margin: 0;
+	margin: 0px;
 	padding: 0px;
 }
 div.box-container 
@@ -353,7 +355,18 @@ img.faq
 		width: calc(85% - 200px);
 		padding:0px 15px 15px 15px;
 	}
-	
+	div#leftColumn ul
+	{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		display: block;
+	}
+	div#leftColumn li
+	{
+		margin: 0;
+		padding: 0px;
+	}
 	div#leftColumn a 
 	{
 		padding: 3px 13px 3px 3px;
@@ -361,6 +374,9 @@ img.faq
 		box-shadow:none;
 		border-top:1px solid #FFFFFF;  
 		border-bottom:1px solid #FFFFFF;  
+		border-left: none;
+		border-right: none;
+		border-radius:0px;
 		background-color:#FFFFFF;  
 		color: #000000;
 	}
@@ -370,6 +386,9 @@ img.faq
 		background-color:#F8F8F8;
 		border-top:1px solid #AAAAAA;
 		border-bottom:1px solid #AAAAAA;
+		border-left: none;
+		border-right: none;
+		border-radius:0px;
 	}
 	div.plusMinusSign
 	{
