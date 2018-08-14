@@ -415,7 +415,7 @@ img.faq
 {
 	div.box
 	{
-		width: 49%;
+		width: calc(49% - 8px);
 	}
 
 }
@@ -423,7 +423,7 @@ img.faq
 {
 	div.box
 	{
-		width: 32%;
+		width: calc(32%-7px);
 	}
 
 }
