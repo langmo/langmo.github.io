@@ -152,7 +152,7 @@ function createPublication(publication, publicationElement, showLinks)
 	if(showLinks)
 	{
 		var bottomElement = document.createElement("p");
-		bottomElement.style.textAlign = "right";
+		//bottomElement.style.textAlign = "right";
 		if(publication.url)
 		{
 			var viewElement = document.createElement("a");
