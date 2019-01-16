@@ -67,7 +67,10 @@ function openPublicationInternal(publications, publicationID)
 	var publication = findPublication(publications, publicationID);
 	if(publication == null)
 		return;
-	window.open(publication.url); 
+	else if(publication.url)
+		window.open(publication.url); 
+	else if(publication.preprint)
+		window.open(publication.preprint); 
 }
 function openPublication(publicationID)
 {
