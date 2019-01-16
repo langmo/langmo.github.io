@@ -75,6 +75,10 @@ function openPublication(publicationID)
 }
 var pubTypes = [
 	{
+		"id": "preparation",
+		"name": "In Print/in Review/Submitted"
+	},
+	{
 		"id": "regular",
 		"name": "Regular Papers"
 	},
@@ -146,10 +150,18 @@ function createPublication(publication, publicationElement, showLinks, lineBreak
 	mainElement.appendChild(document.createTextNode("\""+unescape(publication.title)+".\" "));
 	if(lineBreaks)
 		mainElement.appendChild(document.createElement("br"));
-	var sourceElement = document.createElement("i");
-	sourceElement.appendChild(document.createTextNode(unescape(publication.source)));
-	mainElement.appendChild(sourceElement);
-	mainElement.appendChild(document.createTextNode(", "+unescape(publication.location)+"."));
+	if(publication.source)
+	{
+		var sourceElement = document.createElement("i");
+		sourceElement.appendChild(document.createTextNode(unescape(publication.source)));
+		mainElement.appendChild(sourceElement);
+		if(publication.location)
+			mainElement.appendChild(document.createTextNode(", "));
+		else
+			mainElement.appendChild(document.createTextNode("."));
+	}
+	if(publication.location)
+		mainElement.appendChild(document.createTextNode(unescape(publication.location)+"."));
 	mainElement.appendChild(document.createElement("br"));
 	publicationElement.appendChild(mainElement);
 	
@@ -172,6 +184,16 @@ function createPublication(publication, publicationElement, showLinks, lineBreak
 			viewElement.href=publication.download;
 			viewElement.target="_blank";
 			viewElement.appendChild(document.createTextNode("download"));
+			bottomElement.appendChild(viewElement);
+		}
+		if(publication.preprint)
+		{
+			if(bottomElement.hasChildNodes())
+				bottomElement.appendChild(document.createTextNode(" | "));
+			var viewElement = document.createElement("a");
+			viewElement.href=publication.preprint;
+			viewElement.target="_blank";
+			viewElement.appendChild(document.createTextNode("preprint"));
 			bottomElement.appendChild(viewElement);
 		}
 		publicationElement.appendChild(bottomElement);

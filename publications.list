@@ -1,5 +1,14 @@
 [
 {
+	"id": "Lang2019a",
+	"authors": ["M Lang", "M Shkolnikov"],
+	"year": "in print",
+	"title": "Harmonic dynamics of the Abelian sandpile",
+	"type": "preparation",
+	"source": "Proceedings of the National Academy of Sciences",
+	"preprint": "https://arxiv.org/abs/1806.10823"
+},
+{
 	"id": "Lang2018c",
 	"authors": ["M Lang", "M Shkolnikov"],
 	"year": "2018",
