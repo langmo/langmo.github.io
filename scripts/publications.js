@@ -91,6 +91,10 @@ var pubTypes = [
 		"name": "Book Chapters"
 	},
 	{
+		"id": "patent",
+		"name": "Patents"
+	},
+	{
 		"id": "phdthesis",
 		"name": "PHD Thesis"
 	}
@@ -162,7 +166,8 @@ function createPublication(publication, publicationElement, showLinks, lineBreak
 	}
 	if(publication.location)
 		mainElement.appendChild(document.createTextNode(unescape(publication.location)+"."));
-	mainElement.appendChild(document.createElement("br"));
+	if(publication.note)
+		mainElement.appendChild(document.createTextNode(unescape(publication.note)+"."));
 	publicationElement.appendChild(mainElement);
 	
 	if(showLinks)

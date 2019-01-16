@@ -1,5 +1,21 @@
 [
 {
+	"id": "Chait2017",
+	"authors": ["R Chait", "J Ruess", "M Lang, "CC Guet", G Tkacik],
+	"year": "2017",
+	"title": "Systems and methods for engineering, testing or modelling a biological circuit",
+	"type": "patent",
+	"note": "UK priority filing"
+},
+{
+	"id": "Lang2019b",
+	"authors": ["M Lang", "M Ple%u0161ka", "CC Guet"],
+	"year": "submitted",
+	"title": "A feedback between population dynamics of temperate bacteriophages and multiple coinfections",
+	"type": "preparation",
+	"note": "Paper available upon request"
+},
+{
 	"id": "Lang2019a",
 	"authors": ["M Lang", "M Shkolnikov"],
 	"year": "in print",
@@ -7,16 +23,6 @@
 	"type": "preparation",
 	"source": "Proceedings of the National Academy of Sciences",
 	"preprint": "https://arxiv.org/abs/1806.10823"
-},
-{
-	"id": "Lang2018c",
-	"authors": ["M Lang", "M Shkolnikov"],
-	"year": "2018",
-	"title": "Harmonic dynamics of the Abelian sandpile",
-	"type": "regular",
-	"source": "arXiv preprint",
-	"location": "arXiv:1806.10823",
-	"url": "https://arxiv.org/abs/1806.10823"
 },
 {
 	"id": "Lang2018b",
