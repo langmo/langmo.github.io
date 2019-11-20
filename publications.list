@@ -11,17 +11,26 @@
 	"id": "Lang2019b",
 	"authors": ["M Lang", "M Ple%u0161ka", "CC Guet"],
 	"year": "submitted",
-	"title": "A feedback between population dynamics of temperate bacteriophages and multiple coinfections",
+	"title": "Sparsity of coinfections as a sufficient signal for fate determination by temperate phages",
 	"type": "preparation",
 	"note": "Paper available upon request"
 },
 {
+	"id": "Lang2019c",
+	"authors": ["M Lang", "M Shkolnikov"],
+	"year": "submitted",
+	"title": "Sandpile monomorphisms and limits",
+	"type": "preparation",
+	"preprint": "https://arxiv.org/abs/1904.12209"
+},
+{
 	"id": "Lang2019a",
 	"authors": ["M Lang", "M Shkolnikov"],
-	"year": "in print",
+	"year": "2019",
 	"title": "Harmonic dynamics of the Abelian sandpile",
-	"type": "preparation",
+	"type": "regular",
 	"source": "Proceedings of the National Academy of Sciences",
+	"location": "116(8), 2821-2830",
 	"preprint": "https://arxiv.org/abs/1806.10823"
 },
 {
