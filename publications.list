@@ -8,12 +8,12 @@
 	"note": "UK priority filing"
 },
 {
-	"id": "Lang2019b",
+	"id": "Lang2020a",
 	"authors": ["M Lang", "M Ple%u0161ka", "CC Guet"],
 	"year": "submitted",
-	"title": "Sparsity of coinfections as a sufficient signal for fate determination by temperate phages",
+	"title": "Population dynamics of decision making in temperate bacteriophages",
 	"type": "preparation",
-	"note": "Paper available upon request"
+	preprint": "https://www.biorxiv.org/content/10.1101/2020.03.18.996918v1"
 },
 {
 	"id": "Lang2019c",
