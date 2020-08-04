@@ -7,28 +7,28 @@ pagetitle : Personal Website of Moritz Lang
 	
 	<div class="box">
 	  <div class="boxHeader">
-		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('biology');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="biology-plusMinus" /></a></div>
-		   Biological Modeling
+		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('frameworks');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="frameworks-plusMinus" /></a></div>
+		   Modeling Frameworks
 	  </div>
-	  <div class="boxMain" id="biology" style="display:block">
+	  <div class="boxMain" id="frameworks" style="display:block">
 		<div class="figure">
-			<a href="{{ site.github.url }}/img/nodal_comic_big.jpg" target="_blank"><img src="{{ site.github.url }}/img/nodal_comic.jpg" width="252" /></a>
+			<a href="{{ site.github.url }}/img/model_types_big.jpg" target="_blank"><img src="{{ site.github.url }}/img/model_types.jpg" width="252" /></a>
 			<p><small>
-				The cell fate decision in zebrafish gastrulation incorporates a kinetic proofreading mechanism measuring cell-cell contact durations.
+				Relationship between modeling frameworks: A) ODEs; B-D) block-oriented nonlinear systems; E) species-reaction graph; and F) species-graph.
 			</small></p>
 		</div>
 		<p>
-			In the mathematical modeling of biomolecular networks, I place special importance on understanding the biomolecular details of the modeled network as well as of the performed experiments.
-			I take an active role by proposing experiments, questioning interpretations, requiring controls, or even getting my own hands &quot;wet&quot;.
-			Since the goal is never the model but always biological insight, I try to identify&mdash;by means of modeling&mdash;simple experiments conclusive even without the model. 
+			In systems and control theory, the problem at hand dictates the modeling framework, not vice versa. I thus dynamically iterate between models based on ordinary differential equations (ODE), stochastic models, graphs, block-oriented nonlinear systems, and others. 
+			The application of these frameworks to systems and control theory as well as my &quot;inter-framework perspective&quot; often results in interesting new theoretical approaches, which I subsequently generalize into consistent mathematical theories.
 		</p>
 		<p>
 			Relevant research: 
-			[<span class="popupLink" onmouseenter="showPublicationPopup(this,'Bacchus2012b')" onmouseleave="removePublicationPopup()" onclick="openPublication('Bacchus2012b')">Bacchus2012b</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2016a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2016a')">Lang2016a</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Barone2017')" onmouseleave="removePublicationPopup()" onclick="openPublication('Barone2017')">Barone2017</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Pleska2018a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Pleska2018a')">Pleska2018a</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2020a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2020a')">Lang2020a</span>]
+			[<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2009a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2009a')">Lang2009a</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2011a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2011a')">Lang2011a</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2014b')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2014b')">Lang2014b</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2016b')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2016b')">Lang2016c</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2016c')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2016c')">Lang2016c</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2017a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2017a')">Lang2017a</span>]
 		</p>
 		<br clear="all" />
 	  </div>
@@ -36,14 +36,65 @@ pagetitle : Personal Website of Moritz Lang
 
 	<div class="box">
 	  <div class="boxHeader">
+		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('microscopy');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="microscopy-plusMinus" /></a></div>
+		   Microscope Automation
+	  </div>
+	  <div class="boxMain" id="microscopy" style="display:block">
+		<div class="figure">
+			<a href="{{ site.github.url }}/img/multicam_big.jpg" target="_blank"><img src="{{ site.github.url }}/img/multicam.jpg" width="252" /></a>
+			<p><small>
+				Imaging multiple fluorescence channels in parallel.
+			</small></p>
+		</div>
+		<p>
+			High quality modeling requires high quality data. Today, acquisition of such data is often rather hampered by software than by hardware capabilities. To improve the quality of my models, I thus
+			support my experimental coworkers in providing <a href="{{ site.github.url }}/tools.html">software solutions</a> for automated microscopy, microfluidic chip handling, cybergenetics, data analysis and similar.
+		</p>
+		<p>
+			Relevant research: 
+			[<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2012a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2012a')">Lang2012a</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2018b')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2018b')">Lang2018b</span>]
+		</p>
+		<br clear="all" />
+	  </div>
+	</div>
+	
+	<div class="box">
+	  <div class="boxHeader">
+		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('sandpiles');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="sandpiles-plusMinus" /></a></div>
+		   Abelian Sandpiles
+	  </div>
+	  <div class="boxMain" id="sandpiles" style="display:block">
+		<div class="figure">
+			<iframe width="252" height="271" src="https://www.youtube-nocookie.com/embed/4EETd94ud1o?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<p>
+				<small>Harmonic dynamics of the Abelian sandpile identity. 
+				<a href="https://langmo.github.io/interpile/videos.html" target="_blank">More videos</a></small> 
+			</p>
+		</div>
+		<p>
+			Recently, I got interested in the Abelian sandpile. I showed that under harmonic fields, the sandpile identity shows harmonic dynamics smoothly transforming self-similar patterns onto one another. Thereby, the set of all harmonic fields provides universal coordinates for the sandpile group, allowing to map sandpile configurations between different domains.
+			For more information, visit the <a href="https://langmo.github.io/interpile/" target="_blank">project website</a>.
+		</p>
+		<p>
+			Relevant research: 
+			[<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2019a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2019a')">Lang2019a</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2019c')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2019c')">Lang2019c</span>]
+		</p>
+		<br clear="all" />
+	  </div>
+	</div>
+	
+	<div class="box">
+	  <div class="boxHeader">
 		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('prediction');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="prediction-plusMinus" /></a></div>
-		   Adaptation to Dynamic Environments
+		   Input Invariances
 	  </div>
 	  <div class="boxMain" id="prediction" style="display:block">
 		<div class="figure">
 			<a href="{{ site.github.url }}/img/internal_model_big.jpg" target="_blank"><img src="{{ site.github.url }}/img/internal_model.jpg" width="252" /></a>
 			<p><small>
-				Scale-invariant biological networks can estimate the logarithmic growth rate of environmental signals, and are always implemented by means of an integral feedback.
+				Scale-invariant networks can estimate the time-derivative of the logarithm of input signals, and are always implemented by means of an integral feedback.
 			</small></p>
 		</div>
 		<p>
@@ -59,36 +110,7 @@ pagetitle : Personal Website of Moritz Lang
 		<br clear="all" />
 	  </div>
 	</div>
-
-	<div class="box">
-	  <div class="boxHeader">
-		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('frameworks');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="frameworks-plusMinus" /></a></div>
-		   Modeling Frameworks
-	  </div>
-	  <div class="boxMain" id="frameworks" style="display:block">
-		<div class="figure">
-			<a href="{{ site.github.url }}/img/model_types_big.jpg" target="_blank"><img src="{{ site.github.url }}/img/model_types.jpg" width="252" /></a>
-			<p><small>
-				Relationship between modeling frameworks: A) ODEs; B-D) block-oriented nonlinear systems; E) species-reaction graph; and F) species-graph.
-			</small></p>
-		</div>
-		<p>
-			In systems and synthetic biology, the problem at hand dictates the modeling framework, not vice versa. I thus dynamically iterate between models based on ordinary differential equations (ODE), stochastic models, graphs, block-oriented nonlinear systems, and others. 
-			The application of these frameworks to systems and synthetic biology as well as my &quot;inter-framework perspective&quot; often results in interesting new theoretical approaches, which I subsequently generalize into consistent mathematical theories.
-		</p>
-		<p>
-			Relevant research: 
-			[<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2009a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2009a')">Lang2009a</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2011a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2011a')">Lang2011a</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2014b')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2014b')">Lang2014b</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2016b')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2016b')">Lang2016c</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2016c')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2016c')">Lang2016c</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2017a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2017a')">Lang2017a</span>]
-		</p>
-		<br clear="all" />
-	  </div>
-	</div>
-
+	
 	<div class="box">
 	  <div class="boxHeader">
 		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('modularization');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="modularization-plusMinus" /></a></div>
@@ -121,50 +143,28 @@ pagetitle : Personal Website of Moritz Lang
 
 	<div class="box">
 	  <div class="boxHeader">
-		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('sandpiles');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="sandpiles-plusMinus" /></a></div>
-		   Abelian Sandpiles
+		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('biology');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="biology-plusMinus" /></a></div>
+		   Modeling Examples
 	  </div>
-	  <div class="boxMain" id="sandpiles" style="display:block">
+	  <div class="boxMain" id="biology" style="display:block">
 		<div class="figure">
-			<iframe width="252" height="271" src="https://www.youtube-nocookie.com/embed/4EETd94ud1o?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			<p>
-				<small>Harmonic dynamics of the Abelian sandpile identity. 
-				<a href="https://langmo.github.io/interpile/videos.html" target="_blank">More videos</a></small> 
-			</p>
-		</div>
-		<p>
-			Recently, I got interested in the Abelian sandpile. I showed that under harmonic fields, the sandpile identity shows harmonic dynamics smoothly transforming self-similar patterns onto one another. Thereby, the set of all harmonic fields provides universal coordinates for the sandpile group, allowing to map sandpile configurations between different domains.
-			For more information, visit the <a href="https://langmo.github.io/interpile/" target="_blank">project website</a>.
-		</p>
-		<p>
-			Relevant research: 
-			[<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2019a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2019a')">Lang2019a</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2019c')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2019c')">Lang2019c</span>]
-		</p>
-		<br clear="all" />
-	  </div>
-	</div>
-
-	<div class="box">
-	  <div class="boxHeader">
-		   <div class="plusMinusSign"><a href="javascript:minimizeMaximize('microscopy');"><img src="{{ site.github.url }}/img/minus.gif" class="plusMinusSign" id="microscopy-plusMinus" /></a></div>
-		   Microscope Control
-	  </div>
-	  <div class="boxMain" id="microscopy" style="display:block">
-		<div class="figure">
-			<a href="{{ site.github.url }}/img/multicam_big.jpg" target="_blank"><img src="{{ site.github.url }}/img/multicam.jpg" width="252" /></a>
+			<a href="{{ site.github.url }}/img/nodal_comic_big.jpg" target="_blank"><img src="{{ site.github.url }}/img/nodal_comic.jpg" width="252" /></a>
 			<p><small>
-				Imaging multiple fluorescence channels in parallel.
+				The cell fate decision in zebrafish gastrulation incorporates a kinetic proofreading mechanism measuring cell-cell contact durations.
 			</small></p>
 		</div>
 		<p>
-			High quality modeling requires high quality data. Today, acquisition of such data is often rather hampered by software than by hardware capabilities. To improve the quality of my models, I thus
-			support my experimental coworkers in providing <a href="{{ site.github.url }}/tools.html">software solutions</a> for automated microscopy, microfluidic chip handling, cybergenetics, data analysis and similar.
+			In the mathematical modeling of biomolecular networks, I place special importance on understanding the biomolecular details of the modeled network as well as of the performed experiments.
+			I take an active role by proposing experiments, questioning interpretations, requiring controls, or even getting my own hands &quot;wet&quot;.
+			Since the goal is never the model but always biological insight, I try to identify&mdash;by means of modeling&mdash;simple experiments conclusive even without the model. 
 		</p>
 		<p>
 			Relevant research: 
-			[<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2012a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2012a')">Lang2012a</span>,
-			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2018b')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2018b')">Lang2018b</span>]
+			[<span class="popupLink" onmouseenter="showPublicationPopup(this,'Bacchus2012b')" onmouseleave="removePublicationPopup()" onclick="openPublication('Bacchus2012b')">Bacchus2012b</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2016a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2016a')">Lang2016a</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Barone2017')" onmouseleave="removePublicationPopup()" onclick="openPublication('Barone2017')">Barone2017</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Pleska2018a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Pleska2018a')">Pleska2018a</span>,
+			<span class="popupLink" onmouseenter="showPublicationPopup(this,'Lang2020a')" onmouseleave="removePublicationPopup()" onclick="openPublication('Lang2020a')">Lang2020a</span>]
 		</p>
 		<br clear="all" />
 	  </div>
